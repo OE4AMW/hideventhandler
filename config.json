@@ -1,0 +1,61 @@
+{
+  "devices": [
+    {
+      "deviceDescription": {
+        "vendor": "0b0e",
+        "product": "2004",
+        "messageLength": 2
+      },
+      "commands": [
+        {
+          "command": "0201",
+          "immediateResponse": "0201",
+          "exec": "/home/user/voice-keyer.sh F1",
+          "postExecPositiveResponse": "0200",
+          "postExecNegativeResponse": "0200"
+        },
+        {
+          "command": "01020100",
+          "exec": "echo volUp"
+        },
+        {
+          "command": "01010100",
+          "exec": "echo volDown"
+        }
+      ]
+    },
+    {
+      "deviceDescription": {
+        "vendor": "046d",
+        "product": "c018",
+        "messageLength": 4
+      },
+      "commands": [
+        {
+          "command": "01000000",
+          "exec": "echo mousebutton clicked"
+        },
+        {
+          "command": "00000000",
+          "exec": "echo mousebuttons released"
+        },
+        {
+          "command": "02000000",
+          "exec": "echo right mousebutton klicked"
+        },
+        {
+          "command": "04000000",
+          "exec": "echo right mousewheel klicked"
+        },
+        {
+          "command": "00000001",
+          "exec": "echo mousewheel up"
+        },
+        {
+          "command": "000000FF",
+          "exec": "echo mousewheel down"
+        }
+      ]
+    }
+  ]
+}
